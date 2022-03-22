@@ -10,6 +10,6 @@ start {
 
 split {
     if (current.levelName.Equals("CLEAR") && !old.levelName.Equals("CLEAR")){
-    return true;
+        return true;
     }
 }
