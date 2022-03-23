@@ -7,5 +7,5 @@ start {
 }
 
 split {
-    return !old.levelName.Equals("CLEAR") && current.levelname.Equals("CLEAR");
+    return !old.levelName.Equals("CLEAR") && current.levelName.Equals("CLEAR");
 }
