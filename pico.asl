@@ -3,7 +3,7 @@ state("pico_park") {
 }
 
 start {
-    return old.levelName != "LEVEL 1-1" && current.levelName == "LEVEL 1-1";
+    return current.levelName.StartsWith("LEVEL");
 }
 
 split {
