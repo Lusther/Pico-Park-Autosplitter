@@ -3,13 +3,9 @@ state("pico_park") {
 }
 
 start {
-    if(current.levelName.Equals("LEVEL 1-1")) {
-        return true;
-    }
+    return old.levelName != "LEVEL 1-1" && current.levelName == "LEVEL 1-1";
 }
 
 split {
-    if (current.levelName.Equals("CLEAR") && !old.levelName.Equals("CLEAR")){
-        return true;
-    }
+    return old.levelName != "CLEAR" && current.levelname == "CLEAR";
 }
